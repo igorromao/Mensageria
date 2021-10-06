@@ -1,0 +1,84 @@
+FATAL  | wrapper  | 2021/10/05 15:04:00 | OpenSCManager failed - Acesso negado. (0x5)
+STATUS | wrapper  | 2021/10/05 15:04:12 | ActiveMQ installed.
+ERROR  | wrapper  | 2021/10/05 15:04:26 | CreateService failed - O serviço especificado já existe. (0x431)
+ERROR  | wrapper  | 2021/10/05 15:50:19 | CreateService failed - O serviço especificado já existe. (0x431)
+STATUS | wrapper  | 2021/10/05 15:50:23 | --> Wrapper Started as Console
+STATUS | wrapper  | 2021/10/05 15:50:23 | Launching a JVM...
+INFO   | jvm 1    | 2021/10/05 15:50:24 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2021/10/05 15:50:24 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2021/10/05 15:50:24 | 
+INFO   | jvm 1    | 2021/10/05 15:50:24 | Java Runtime: Oracle Corporation 1.8.0_271 C:\Program Files\Java\jre1.8.0_271
+INFO   | jvm 1    | 2021/10/05 15:50:24 |   Heap sizes: current=249344k  free=233737k  max=932352k
+INFO   | jvm 1    | 2021/10/05 15:50:24 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=xluBCdNAhrV6W4MZ -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=12776 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2021/10/05 15:50:24 | Extensions classpath:
+INFO   | jvm 1    | 2021/10/05 15:50:24 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2021/10/05 15:50:24 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2021/10/05 15:50:24 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2021/10/05 15:50:24 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2021/10/05 15:50:24 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2021/10/05 15:50:24 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2021/10/05 15:50:24 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@4bf97a9f: startup date [Tue Oct 05 15:50:24 BRT 2021]; root of context hierarchy
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\JAVA\ferramentas-Java\ActiveMQ\apache-activemq-5.16.3\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | PListStore:[D:\JAVA\ferramentas-Java\ActiveMQ\apache-activemq-5.16.3\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Apache ActiveMQ 5.16.3 (localhost, ID:SUP96-49943-1633459825399-0:1) is starting
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Listening for connections at: tcp://SUP96:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Listening for connections at: amqp://SUP96:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Listening for connections at: stomp://SUP96:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Listening for connections at: mqtt://SUP96:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@783572da{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Listening for connections at ws://SUP96:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Connector ws started
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | Apache ActiveMQ 5.16.3 (localhost, ID:SUP96-49943-1633459825399-0:1) started
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: D:\JAVA\ferramentas-Java\ActiveMQ\apache-activemq-5.16.3\bin\win64\..\..\data\kahadb only has 25207 mb of usable space. - resetting to maximum available disk space: 25207 mb
+INFO   | jvm 1    | 2021/10/05 15:50:25 |  WARN | Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: D:\JAVA\ferramentas-Java\ActiveMQ\apache-activemq-5.16.3\bin\win64\..\..\data only has 25207 mb of usable space. - resetting to maximum available disk space: 25207 mb
+INFO   | jvm 1    | 2021/10/05 15:50:26 |  INFO | ActiveMQ WebConsole available at http://127.0.0.1:8161/
+INFO   | jvm 1    | 2021/10/05 15:50:26 |  INFO | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/
+INFO   | jvm 1    | 2021/10/06 09:26:33 |  INFO | Connector vm://localhost started
+STATUS | wrapper  | 2021/10/06 09:32:11 | --> Wrapper Started as Console
+STATUS | wrapper  | 2021/10/06 09:32:11 | Launching a JVM...
+INFO   | jvm 1    | 2021/10/06 09:32:11 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2021/10/06 09:32:11 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2021/10/06 09:32:11 | 
+INFO   | jvm 1    | 2021/10/06 09:32:12 | Java Runtime: Oracle Corporation 1.8.0_271 C:\Program Files\Java\jre1.8.0_271
+INFO   | jvm 1    | 2021/10/06 09:32:12 |   Heap sizes: current=249344k  free=233737k  max=932352k
+INFO   | jvm 1    | 2021/10/06 09:32:12 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=sWNBNtPtB4hmo_fk -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=5212 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2021/10/06 09:32:12 | Extensions classpath:
+INFO   | jvm 1    | 2021/10/06 09:32:12 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2021/10/06 09:32:12 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2021/10/06 09:32:12 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2021/10/06 09:32:12 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2021/10/06 09:32:12 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2021/10/06 09:32:12 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2021/10/06 09:32:12 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@75321ed: startup date [Wed Oct 06 09:32:12 BRT 2021]; root of context hierarchy
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\workspace\Mensageria\apache-activemq-5.16.3\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | KahaDB is version 7
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | PListStore:[D:\workspace\Mensageria\apache-activemq-5.16.3\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Apache ActiveMQ 5.16.3 (localhost, ID:SUP96-55496-1633523533154-0:1) is starting
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Listening for connections at: tcp://SUP96:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Listening for connections at: amqp://SUP96:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Listening for connections at: stomp://SUP96:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Listening for connections at: mqtt://SUP96:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@4f75fc3c{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Listening for connections at ws://SUP96:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Connector ws started
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | Apache ActiveMQ 5.16.3 (localhost, ID:SUP96-55496-1633523533154-0:1) started
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: D:\workspace\Mensageria\apache-activemq-5.16.3\bin\win64\..\..\data\kahadb only has 25103 mb of usable space. - resetting to maximum available disk space: 25103 mb
+INFO   | jvm 1    | 2021/10/06 09:32:13 |  WARN | Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: D:\workspace\Mensageria\apache-activemq-5.16.3\bin\win64\..\..\data only has 25103 mb of usable space. - resetting to maximum available disk space: 25103 mb
+INFO   | jvm 1    | 2021/10/06 09:32:14 |  INFO | ActiveMQ WebConsole available at http://127.0.0.1:8161/
+INFO   | jvm 1    | 2021/10/06 09:32:14 |  INFO | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/
