@@ -3,6 +3,7 @@ import javax.jms.*;
 import javax.naming.InitialContext;
 import java.util.Scanner;
 
+
 /**
  * Gerenciador de processos de eventos de cartão.
  * @auhtor Igor Romão
@@ -16,13 +17,19 @@ public class Consumidor {
         InitialContext cont = new InitialContext();
         ConnectionFactory factory = (ConnectionFactory) cont.lookup("ConnectionFactory");
         Connection connection = factory.createConnection();
-        new Scanner(System.in).nextLine();
         connection.start();
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         Destination fila = (Destination) cont.lookup("players");
         MessageConsumer consumer = session.createConsumer(fila);
-        Message message = consumer.receive();
-        System.out.println("Recebendo mensagem " + message);
+        consumer.setMessageListener(message -> {
+            TextMessage text = (TextMessage)message;
+            try {
+                System.out.println(text.getText());
+            } catch (JMSException e) {
+                e.printStackTrace();
+            }
+        });
+        new Scanner(System.in).nextLine();
         session.close();
         connection.close();
         cont.close();
