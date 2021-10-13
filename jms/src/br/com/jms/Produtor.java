@@ -2,18 +2,17 @@ package br.com.jms;
 
 import javax.jms.*;
 import javax.naming.InitialContext;
-import java.util.Scanner;
+
 
 
 /**
  * Gerenciador de processos de eventos de cartão.
- * @version 1.1 - 07/10/21
+ * @version 1.1 - 13/10/21
  * @auhtor Igor Romão
- * @since 07/10/21
+ * @since 13/10/21
  */
-public class Consumidor {
+public class Produtor {
     public static void main(String[] args) throws Exception {
-
         System.out.println("Iniciando fila");
         InitialContext cont = new InitialContext();
         ConnectionFactory factory = (ConnectionFactory) cont.lookup("ConnectionFactory");
@@ -21,16 +20,10 @@ public class Consumidor {
         connection.start();
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         Destination fila = (Destination) cont.lookup("players");
-        MessageConsumer consumer = session.createConsumer(fila);
-        consumer.setMessageListener(message -> {
-            TextMessage text = (TextMessage) message;
-            try {
-                System.out.println(text.getText());
-            } catch (JMSException e) {
-                e.printStackTrace();
-            }
-        });
-        new Scanner(System.in).nextLine();
+        MessageProducer producer = session.createProducer(fila);
+        Message message = session.createTextMessage("<player><id>05</id></player>");
+        producer.send(message);
+        //new Scanner(System.in).nextLine();
         session.close();
         connection.close();
         cont.close();

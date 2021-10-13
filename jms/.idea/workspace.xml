@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175f4011-4f80-4236-b7d2-4d831e521953" name="Changes" comment="Adicionando classe de Consumo da fila">
+    <list default="true" id="175f4011-4f80-4236-b7d2-4d831e521953" name="Changes" comment="Corrigindo problema ao eviar mais de uma requisição e mostrar texto da fila personalizado no console.">
+      <change afterPath="$PROJECT_DIR$/src/br/com/jms/Produtor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jms/br/com/jms/Consumidor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jms/br/com/jms/Consumidor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/jms/Consumidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/jms/Consumidor.java" afterDir="false" />
@@ -48,9 +49,27 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.jms" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Consumidor">
     <configuration name="Consumidor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.jms.Consumidor" />
+      <module name="jms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.jms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Produtor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.jms.Produtor" />
       <module name="jms" />
       <extension name="coverage">
         <pattern>
@@ -65,6 +84,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Consumidor" />
+        <item itemvalue="Application.Produtor" />
       </list>
     </recent_temporary>
   </component>
@@ -77,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633629094395</updated>
       <workItem from="1633629098422" duration="26675000" />
-      <workItem from="1633973881814" duration="2406000" />
+      <workItem from="1633973881814" duration="12791000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionando classe de Consumo da fila">
       <created>1633634876633</created>
@@ -93,11 +113,29 @@
       <option name="project" value="LOCAL" />
       <updated>1633635030065</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Corrigindo problema ao eviar mais de uma requisição e mostrar texto da fila personalizado no console.">
+      <created>1633976772930</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633976772930</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -113,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adicionando classe de Consumo da fila" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando classe de Consumo da fila" />
+    <MESSAGE value="Corrigindo problema ao eviar mais de uma requisição e mostrar texto da fila personalizado no console." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrigindo problema ao eviar mais de uma requisição e mostrar texto da fila personalizado no console." />
   </component>
 </project>
