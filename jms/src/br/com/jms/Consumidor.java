@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 
 /**
- * Gerenciador de processos de eventos de cartão.
+ * Gerenciador consumidor fila.
  * @version 1.1 - 07/10/21
  * @auhtor Igor Romão
  * @since 07/10/21

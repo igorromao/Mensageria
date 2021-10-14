@@ -4,14 +4,13 @@ import javax.jms.*;
 import javax.naming.InitialContext;
 
 
-
 /**
- * Gerenciador de Envio de fila.
- * @version 1.1 - 13/10/21
+ * Gerenciador de Topico de fila.
+ * @version 1.1 - 14/10/21
  * @auhtor Igor Romão
- * @since 13/10/21
+ * @since 14/10/21
  */
-public class Produtor {
+public class Topico {
     public static void main(String[] args) throws Exception {
         System.out.println("Iniciando envio para fila");
         InitialContext cont = new InitialContext();
@@ -19,8 +18,8 @@ public class Produtor {
         Connection connection = factory.createConnection();
         connection.start();
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-        Destination fila = (Destination) cont.lookup("players");
-        MessageProducer producer = session.createProducer(fila);
+        Destination topico = (Destination) cont.lookup("players");
+        MessageProducer producer = session.createProducer(topico);
         Message message = session.createTextMessage("<player><id>05</id></player>");
         producer.send(message);
         session.close();
