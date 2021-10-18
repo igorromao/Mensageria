@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175f4011-4f80-4236-b7d2-4d831e521953" name="Changes" comment="Configurando projeto para o envio de XML">
+    <list default="true" id="175f4011-4f80-4236-b7d2-4d831e521953" name="Changes" comment="Acrescentando nome do Servidor.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jms/br/com/modelo/GerarJogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jms/br/com/modelo/GerarJogador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jms/br/com/modelo/Jogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jms/br/com/modelo/Jogador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/modelo/GerarJogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/modelo/GerarJogador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/modelo/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/modelo/Jogador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +118,7 @@
       <workItem from="1633629098422" duration="26675000" />
       <workItem from="1633973881814" duration="17426000" />
       <workItem from="1634234343872" duration="11537000" />
-      <workItem from="1634306863631" duration="20423000" />
+      <workItem from="1634306863631" duration="23645000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionando classe de Consumo da fila">
       <created>1633634876633</created>
@@ -158,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634566863654</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Configurando projeto para o envio de XML">
+      <created>1634568088912</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634568088912</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +204,7 @@
     <MESSAGE value="Adicionando classe de envio de mensagem &quot;Produtor&quot;" />
     <MESSAGE value="Criando Classe Produtor.java" />
     <MESSAGE value="Configurando projeto para o envio de XML" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configurando projeto para o envio de XML" />
+    <MESSAGE value="Acrescentando nome do Servidor." />
+    <option name="LAST_COMMIT_MESSAGE" value="Acrescentando nome do Servidor." />
   </component>
 </project>
