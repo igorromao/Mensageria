@@ -1,7 +1,12 @@
 package br.com.jms;
 
+import br.com.modelo.GerarJogador;
+import br.com.modelo.Jogador;
+
 import javax.jms.*;
 import javax.naming.InitialContext;
+import javax.xml.bind.JAXB;
+import java.io.StringWriter;
 
 
 /**
@@ -21,6 +26,11 @@ public class Topico {
         Destination topico = (Destination) cont.lookup("players");
         MessageProducer producer = session.createProducer(topico);
         Message message = session.createTextMessage("<player><id>05</id></player>");
+        Jogador jogador = new GerarJogador().gerarJogadores();
+        StringWriter writer = new StringWriter();
+        JAXB.marshal(jogador,writer);
+        String xml = writer.toString();
+        System.out.println(xml);
         producer.send(message);
         session.close();
         connection.close();
