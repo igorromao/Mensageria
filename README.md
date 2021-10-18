@@ -1,1 +1,1 @@
-# Mensageria
+# Project using java messaging (Queue).
