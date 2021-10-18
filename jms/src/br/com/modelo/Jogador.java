@@ -2,7 +2,6 @@ package br.com.modelo;
 
 import javax.xml.bind.annotation.*;
 import java.io.Serializable;
-import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -19,10 +18,9 @@ import java.util.Set;
 public class Jogador implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    private String nomeJogador;
+    private String nomeServidor;
     private Integer id;
     private Calendar dataEntrada;
-    private LocalDateTime dataEntradaServidor;
 
     public Jogador() {
 
@@ -30,25 +28,24 @@ public class Jogador implements Serializable {
 
    @XmlElementWrapper(name = "jogador")
    @XmlElement(name = "jogador")
-   private Set<Item> jogador = new LinkedHashSet<Item>();
+   private Set<Item> jogador = new LinkedHashSet<>();
 
-    public Jogador(String nomeJogador, Integer id, Calendar dataEntrada, LocalDateTime dataEntradaServidor) {
-        this.nomeJogador = nomeJogador;
+    public Jogador(String nomeServidor, Integer id, Calendar dataEntrada) {
+        this.nomeServidor = nomeServidor;
         this.id = id;
         this.dataEntrada = dataEntrada;
-        this.dataEntradaServidor = dataEntradaServidor;
     }
 
     public void adicionarJogador(Item jogador) {
         this.jogador.add(jogador);
     }
 
-    public String getNomeJogador() {
-        return nomeJogador;
+    public String getNomeServidor() {
+        return nomeServidor;
     }
 
-    public void setNomeJogador(String nomeJogador) {
-        this.nomeJogador = nomeJogador;
+    public void setNomeServidor(String nomeServidor) {
+        this.nomeServidor = nomeServidor;
     }
 
     public Integer getId() {
@@ -67,11 +64,11 @@ public class Jogador implements Serializable {
         this.dataEntrada = dataEntrada;
     }
 
-    public LocalDateTime getDataEntradaServidor() {
-        return dataEntradaServidor;
+    public Set<Item> getJogador() {
+        return jogador;
     }
 
-    public void setDataEntradaServidor(LocalDateTime dataEntradaServidor) {
-        this.dataEntradaServidor = dataEntradaServidor;
+    public void setJogador(Set<Item> jogador) {
+        this.jogador = jogador;
     }
 }
