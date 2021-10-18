@@ -2,9 +2,10 @@
 
 server player input management
 
-interface Queue.
+Interface Queue.
 ![fila](https://user-images.githubusercontent.com/42851423/137756048-1b74ae31-8ea5-42e3-b708-e7fe114d026a.JPG)
 
 XML Number Players!
 
-![XML](https://user-images.githubusercontent.com/42851423/137755692-7ce958dc-49b8-4a50-9708-fd91140ebb61.JPG)
+![Xml](https://user-images.githubusercontent.com/42851423/137779891-bc1854e1-ddbe-47e1-aca0-be8f065cf621.JPG)
+
