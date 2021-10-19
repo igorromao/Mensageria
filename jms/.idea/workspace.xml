@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175f4011-4f80-4236-b7d2-4d831e521953" name="Changes" comment="Acrescentando nome do Servidor.">
+    <list default="true" id="175f4011-4f80-4236-b7d2-4d831e521953" name="Changes" comment="Arrumando Construtor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jms/br/com/modelo/GerarJogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jms/br/com/modelo/GerarJogador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jms/br/com/modelo/Jogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jms/br/com/modelo/Jogador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/modelo/GerarJogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/modelo/GerarJogador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/modelo/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/modelo/Jogador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,7 @@
       <recent name="br.com.jms" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Topico">
+  <component name="RunManager" selected="Application.Consumidor">
     <configuration name="Consumidor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.jms.Consumidor" />
       <module name="jms" />
@@ -101,8 +97,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Topico" />
         <item itemvalue="Application.Consumidor" />
+        <item itemvalue="Application.Topico" />
         <item itemvalue="Application.Produtor" />
       </list>
     </recent_temporary>
@@ -118,7 +114,7 @@
       <workItem from="1633629098422" duration="26675000" />
       <workItem from="1633973881814" duration="17426000" />
       <workItem from="1634234343872" duration="11537000" />
-      <workItem from="1634306863631" duration="23645000" />
+      <workItem from="1634306863631" duration="35880000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionando classe de Consumo da fila">
       <created>1633634876633</created>
@@ -169,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634568088912</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Acrescentando nome do Servidor.">
+      <created>1634577809652</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634577809652</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Arrumando Construtor">
+      <created>1634577877870</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634577877870</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +215,7 @@
     <MESSAGE value="Criando Classe Produtor.java" />
     <MESSAGE value="Configurando projeto para o envio de XML" />
     <MESSAGE value="Acrescentando nome do Servidor." />
-    <option name="LAST_COMMIT_MESSAGE" value="Acrescentando nome do Servidor." />
+    <MESSAGE value="Arrumando Construtor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrumando Construtor" />
   </component>
 </project>
