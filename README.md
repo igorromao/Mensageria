@@ -1,6 +1,8 @@
 # Project using java messaging (Queue).
 
-server player input management
+Server player input management
+
+Containing a class - consumption and producer!
 
 Interface Queue.
 ![fila](https://user-images.githubusercontent.com/42851423/137756048-1b74ae31-8ea5-42e3-b708-e7fe114d026a.JPG)
